@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Dear Pranty ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+            background:
+                radial-gradient(
+                    circle at top,
+                    #ffb6c1 0%,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #170b20,
+                    #3b123f,
+                    #170b20
+                );
+
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 25px 15px;
+
+            position: relative;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 720px;
+
+            padding: 45px 30px;
+
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.10);
+
+            border: 1px solid rgba(255, 255, 255, 0.20);
+
+            border-radius: 30px;
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            box-shadow:
+                0 20px 70px rgba(0, 0, 0, 0.45);
+
+            animation: cardIn 1.2s ease;
+        }
+
+        @keyframes cardIn {
+
+            from {
+                opacity: 0;
+                transform:
+                    translateY(40px)
+                    scale(.95);
+            }
+
+            to {
+                opacity: 1;
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+        }
+
+        /* Small heading */
+
+        .small-text {
+
+            font-size: 14px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            color: #ffd7e1;
+
+            margin-bottom: 15px;
+        }
+
+        /* Main heading */
+
+        h1 {
+
+            font-size:
+                clamp(45px, 10vw, 82px);
+
+            line-height: 1;
+
+            margin-bottom: 15px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #ffb6d1,
+                    #ffffff
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+
+            from {
+                filter:
+                    drop-shadow(
+                        0 0 5px
+                        rgba(255,255,255,.2)
+                    );
+            }
+
+            to {
+                filter:
+                    drop-shadow(
+                        0 0 20px
+                        rgba(255,130,180,.7)
+                    );
+            }
+        }
+
+        /* Birthday Girl Name */
+
+        .name {
+
+            font-size:
+                clamp(28px, 7vw, 45px);
+
+            font-weight: 600;
+
+            margin-bottom: 25px;
+
+            color: #ffd5e4;
+
+            text-shadow:
+                0 0 15px
+                rgba(255,150,190,.4);
+        }
+
+        .heart {
+
+            display: inline-block;
+
+            animation:
+                heartbeat 1.2s infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.25);
+            }
+        }
+
+        /* Countdown */
+
+        .countdown-title {
+
+            margin-top: 25px;
+
+            margin-bottom: 15px;
+
+            color: #ffe5ed;
+
+            font-size: 17px;
+        }
+
+        .countdown {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+            margin:
+                20px 0 30px;
+        }
+
+        .time-box {
+
+            padding: 15px 8px;
+
+            border-radius: 18px;
+
+            background:
+                rgba(255,255,255,.12);
+
+            border:
+                1px solid
+                rgba(255,255,255,.15);
+
+            box-shadow:
+                inset 0 0 15px
+                rgba(255,255,255,.03);
+        }
+
+        .time-box span {
+
+            display: block;
+
+            font-size:
+                clamp(25px, 7vw, 42px);
+
+            font-weight: 700;
+        }
+
+        .time-box small {
+
+            color: #ffdce7;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+        }
+
+        /* Button */
+
+        .btn {
+
+            border: none;
+
+            outline: none;
+
+            cursor: pointer;
+
+            padding:
+                15px 30px;
+
+            border-radius: 50px;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            color: #52132f;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #ffb4cf
+                );
+
+            box-shadow:
+                0 8px 25px
+                rgba(255,100,160,.35);
+
+            transition:
+                .3s ease;
+        }
+
+        .btn:hover {
+
+            transform:
+                translateY(-3px)
+                scale(1.03);
+
+            box-shadow:
+                0 12px 35px
+                rgba(255,100,160,.55);
+        }
+
+        /* Surprise section */
+
+        .surprise {
+
+            display: none;
+
+            margin-top: 35px;
+
+            animation:
+                reveal .8s ease;
+        }
+
+        .surprise.show {
+
+            display: block;
+        }
+
+        @keyframes reveal {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(25px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+        /* Photo */
+
+        .photo {
+
+            width: 100%;
+
+            max-width: 430px;
+
+            aspect-ratio: 4 / 3;
+
+            object-fit: cover;
+
+            border-radius: 22px;
+
+            border:
+                4px solid
+                rgba(255,255,255,.7);
+
+            box-shadow:
+                0 15px 40px
+                rgba(0,0,0,.4);
+
+            margin-bottom: 25px;
+        }
+
+        /* Message */
+
+        .message {
+
+            text-align: left;
+
+            line-height: 1.8;
+
+            color: #fff1f5;
+
+            font-size: 16px;
+        }
+
+        .message strong {
+
+            color: #ffb7d0;
+        }
+
+        .signature {
+
+            margin-top: 25px;
+
+            text-align: right;
+
+            color: #ffd0df;
+
+            font-style: italic;
+        }
+
+        /* Floating Hearts */
+
+        .floating-heart {
+
+            position: fixed;
+
+            bottom: -50px;
+
+            font-size: 22px;
+
+            pointer-events: none;
+
+            animation:
+                floatUp linear forwards;
+
+            z-index: 1;
+        }
+
+        @keyframes floatUp {
+
+            from {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 1;
+            }
+
+            to {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+        }
+
+        /* Confetti */
+
+        .confetti {
+
+            position: fixed;
+
+            width: 9px;
+
+            height: 14px;
+
+            top: -20px;
+
+            z-index: 9999;
+
+            pointer-events: none;
+
+            animation:
+                fall linear forwards;
+        }
+
+        @keyframes fall {
+
+            to {
+
+                transform:
+                    translateY(110vh)
+                    rotate(720deg);
+            }
+        }
+
+        /* Footer */
+
+        .footer {
+
+            margin-top: 30px;
+
+            font-size: 13px;
+
+            color:
+                rgba(255,255,255,.55);
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                padding: 15px;
+            }
+
+            .card {
+
+                padding:
+                    35px 18px;
+
+                border-radius: 25px;
+            }
+
+            .countdown {
+
+                gap: 7px;
+            }
+
+            .time-box {
+
+                padding:
+                    12px 5px;
+            }
+
+            .time-box span {
+
+                font-size: 27px;
+            }
+
+            .time-box small {
+
+                font-size: 9px;
+            }
+
+            .message {
+
+                font-size: 15px;
+
+                line-height: 1.7;
+            }
+
+            .btn {
+
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <!-- Top Text -->
+
+        <div class="small-text">
+
+            A Little Surprise For Pranty ✨
+
+        </div>
+
+
+        <!-- Main Title -->
+
+        <h1>
+
+            Happy Birthday Dear🎉🎂
+
+        </h1>
+
+
+        <!-- Birthday Girl -->
+
+        <div class="name">
+
+            PRANTY 
+
+            <span class="heart">
+                ❤️
+            </span>
+
+        </div>
+
+
+        <!-- Countdown -->
+
+        <div id="countdownSection">
+
+            <div class="countdown-title">
+
+                Something special is coming... ✨
+
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="time-box">
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <small>
+                        DAYS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        HOURS
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        MINUTES
+                    </small>
+
+                </div>
+
+
+                <div class="time-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        SECONDS
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Surprise Button -->
+
+        <button
+            class="btn"
+            onclick="openSurprise()"
+        >
+
+            💌 Open Your Surprise
+
+        </button>
+
+
+        <!-- Surprise Content -->
+
+        <div
+            class="surprise"
+            id="surprise"
+        >
+
+
+            <!--
+                নিজের ছবি এখানে বসাবে
+
+                ছবির নাম:
+                birthday-photo.jpg
+
+                একই folder-এ রাখতে হবে।
+            -->
+
+            <img
+                src="birthday-photo.jpg"
+                class="photo"
+                alt="Pranty Birthday"
+            >
+
+
+            <!-- Birthday Message -->
+
+            <div class="message">
+
+
+                <p>
+
+                    <strong>
+                        Happy Birthday To YOU, Pranty! ❤️🎂
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    আজকের দিনটা তোমার জন্য যতটা
+                    special, জানি না তোমাকে কতটা
+                    সুন্দরভাবে wish করতে পারব।
+
+                    তারপরও নিজের মতো করে কিছু কথা
+                    বলতে ইচ্ছে হলো।
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    গত <strong>2 বছরে</strong> তোমার
+                    সাথে অনেক কথা হয়েছে, অনেক ছোট
+                    ছোট মুহূর্ত share করেছি, অনেক
+                    হাসি-ঠাট্টা হয়েছে, আবার কখনো
+                    কখনো ছোটখাটো অভিমানও হয়েছে।
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    কিন্তু এতকিছুর পরেও একটা জিনিস
+                    একই আছে—
+
+                    <strong>
+                        তুমি আমার কাছে এখনও
+                        অনেকটা special। ❤️
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    জীবনে কিছু মানুষ আসে, যাদের সাথে
+                    পরিচয়টা হয়তো খুব সাধারণভাবেই
+                    শুরু হয়।
+
+                    কিন্তু সময়ের সাথে সাথে তারা
+                    আমাদের জীবনের একটা গুরুত্বপূর্ণ
+                    অংশ হয়ে যায়।
+
+                    তুমি ঠিক তেমনই একজন।
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    তোমার সাথে কাটানো ছোট ছোট
+                    মুহূর্তগুলো হয়তো আলাদা করে
+                    খুব বড় কিছু মনে হয় না,
+
+                    কিন্তু পরে যখন ভাবি, তখন বুঝতে
+                    পারি—এই ছোট ছোট মুহূর্তগুলোর
+                    মধ্যেই কত সুন্দর স্মৃতি জমে আছে। 🌸
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    আজ তোমার birthday, তাই তোমার
+                    জন্য আমার একটাই wish—
+
+                    <strong>
+                        তুমি সবসময় ভালো থেকো,
+                        হাসিখুশি থেকো,
+                    </strong>
+
+                    আর তোমার সব স্বপ্ন একদিন
+                    সত্যি হোক। ✨
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    তোমার জীবনের নতুন বছরটা যেন
+                    happiness, success, peace
+                    আর অনেক সুন্দর মুহূর্ত দিয়ে
+                    ভরে যায়।
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    জীবনে যত কঠিন সময়ই আসুক,
+                    তুমি যেন নিজের উপর বিশ্বাসটা
+                    কখনো হারিয়ে না ফেলো।
+
+                    আর তোমার মুখের এই সুন্দর
+                    হাসিটা যেন সবসময় থাকে। 😊❤️
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    আর একটা কথা...
+
+                    <strong>
+                        গত 2 বছরে তুমি আমার
+                        জীবনের যে জায়গাটা তৈরি
+                        করেছো, সেটা হয়তো
+                        সাধারণ কয়েকটা কথায়
+                        বোঝানো সম্ভব না।
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    কিছু অনুভূতি থাকে যেগুলো
+                    বলা থেকে অনুভব করাই
+                    বেশি সুন্দর। ❤️
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    আজ তোমার দিন।
+
+                    তাই আজ আর কোনো কথা নয়।
+
+                    শুধু এটুকুই বলি—
+
+                    <strong>
+                        তুমি আমার কাছে সত্যিই
+                        খুব special একজন মানুষ,
+                        এবং তোমাকে আমার জীবনে
+                        পাওয়াটা আমি genuinely
+                        appreciate করি।
+                    </strong>
+
+                </p>
+
+
+                <br>
+
+
+                <p>
+
+                    I hope this new year of your
+                    life brings you countless
+                    reasons to smile,
+
+                    beautiful memories to keep,
+
+                    and dreams that slowly turn
+                    into reality. 🌷✨
+
+                </p>
+
+
+                <div class="signature">
+
+                    Happy Birthday, Pranty. 🌸
+
+                    <br>
+
+                    Stay happy, stay blessed.
+
+                    <br>
+
+                    And always keep smiling. ❤️
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+
+            Made with ❤️ specially for Pranty
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================
+   BIRTHDAY COUNTDOWN
+   ========================================= */
+
+
+// 4 October 2026 - 12:00 AM
+
+const birthday =
+    new Date(
+        "October 4, 2026 00:00:00"
+    ).getTime();
+
+
+function updateCountdown() {
+
+
+    const now =
+        new Date().getTime();
+
+
+    const distance =
+        birthday - now;
+
+
+    // Birthday arrived
+
+    if (distance <= 0) {
+
+
+        document.getElementById("days")
+            .innerText = "00";
+
+
+        document.getElementById("hours")
+            .innerText = "00";
+
+
+        document.getElementById("minutes")
+            .innerText = "00";
+
+
+        document.getElementById("seconds")
+            .innerText = "00";
+
+
+        document.querySelector(
+            ".countdown-title"
+        ).innerHTML =
+            "🎂 It's Pranty's Birthday! 🎉";
+
+
+        startConfetti();
+
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance /
+            (1000 * 60 * 60)) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance /
+            (1000 * 60)) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance / 1000) % 60
+        );
+
+
+    document.getElementById("days")
+        .innerText =
+        String(days)
+        .padStart(2, "0");
+
+
+    document.getElementById("hours")
+        .innerText =
+        String(hours)
+        .padStart(2, "0");
+
+
+    document.getElementById("minutes")
+        .innerText =
+        String(minutes)
+        .padStart(2, "0");
+
+
+    document.getElementById("seconds")
+        .innerText =
+        String(seconds)
+        .padStart(2, "0");
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+
+/* =========================================
+   OPEN SURPRISE
+   ========================================= */
+
+
+function openSurprise() {
+
+
+    const surprise =
+        document.getElementById(
+            "surprise"
+        );
+
+
+    surprise.classList.add(
+        "show"
+    );
+
+
+    startConfetti();
+
+
+    surprise.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+}
+
+
+
+/* =========================================
+   CONFETTI
+   ========================================= */
+
+
+function startConfetti() {
+
+
+    for (
+        let i = 0;
+        i < 150;
+        i++
+    ) {
+
+
+        setTimeout(() => {
+
+
+            const confetti =
+                document.createElement(
+                    "div"
+                );
+
+
+            confetti.classList.add(
+                "confetti"
+            );
+
+
+            confetti.style.left =
+                Math.random() * 100 +
+                "vw";
+
+
+            confetti.style.background =
+                randomColor();
+
+
+            confetti.style.animationDuration =
+                (
+                    Math.random() * 3 +
+                    2
+                ) + "s";
+
+
+            confetti.style.transform =
+                `rotate(
+                    ${Math.random() * 360}deg
+                )`;
+
+
+            document.body.appendChild(
+                confetti
+            );
+
+
+            setTimeout(() => {
+
+                confetti.remove();
+
+            }, 5000);
+
+
+        }, i * 12);
+
+    }
+
+}
+
+
+
+/* Random Confetti Color */
+
+
+function randomColor() {
+
+
+    const colors = [
+
+        "#ff4d88",
+
+        "#ffcc00",
+
+        "#00d4ff",
+
+        "#7cff6b",
+
+        "#ffffff",
+
+        "#ff7eb3",
+
+        "#b388ff"
+
+    ];
+
+
+    return colors[
+        Math.floor(
+            Math.random() *
+            colors.length
+        )
+    ];
+
+}
+
+
+
+/* =========================================
+   FLOATING HEARTS
+   ========================================= */
+
+
+function createHeart() {
+
+
+    const heart =
+        document.createElement(
+            "div"
+        );
+
+
+    heart.className =
+        "floating-heart";
+
+
+    heart.innerHTML =
+        Math.random() > .5
+        ? "❤️"
+        : "💗";
+
+
+    heart.style.left =
+        Math.random() * 100 +
+        "vw";
+
+
+    heart.style.animationDuration =
+        (
+            Math.random() * 5 +
+            5
+        ) + "s";
+
+
+    heart.style.fontSize =
+        (
+            Math.random() * 15 +
+            15
+        ) + "px";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 10000);
+
+}
+
+
+setInterval(
+    createHeart,
+    1000
+);
+
+
+</script>
+
+</body>
+
+</html>
